@@ -70,9 +70,9 @@ const Navigation = () => {
           <div className="col-auto px-1">
             <LanguageChooser />
           </div>
-          <div className="col-auto pl-1">
+          {/*<div className="col-auto pl-1">
             <SettingsChooser />
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

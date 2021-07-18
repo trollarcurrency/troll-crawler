@@ -8,10 +8,11 @@ export default class RandomVerifiedAccounts extends React.Component {
   state = { accounts: [] };
 
   async componentDidMount() {
-    const data = await fetch("https://mynano.ninja/api/accounts/verified", {
+    /*const data = await fetch("https://mynano.ninja/api/accounts/verified", {
       mode: "cors"
     });
-    const accounts = await data.json();
+    const accounts = await data.json();*/
+	const accounts = [{"votingweight":4.051734392056789e+34,"delegators":0,"uptime":94.82161673942497,"score":80,"account":"troll_3xcea84wfyyxxzf7tuy3d394eajjk7qkbwg4r51psttujp69hw3tx9ize78t","alias":"Genesis"}];
 
     this.setState({ accounts: sampleSize(accounts, this.props.count) });
   }

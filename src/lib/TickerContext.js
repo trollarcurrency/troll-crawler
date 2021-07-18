@@ -13,22 +13,22 @@ class TickerProvider extends React.Component {
   };
 
   componentDidMount() {
-    this.updateTicker();
+    //this.updateTicker();
   }
 
   async updateTicker() {
-    const ticker = await this.fetchTicker();
+    /*const ticker = await this.fetchTicker();
     this.setState({ ...ticker });
 
-    setTimeout(this.updateTicker.bind(this), 900000);
+    setTimeout(this.updateTicker.bind(this), 900000);*/
   }
 
   async fetchTicker() {
-    const ticker = await apiClient.ticker();
+    /*const ticker = await apiClient.ticker();
     this.setState({
       priceUSD: ticker.USD,
       priceBTC: ticker.BTC
-    });
+    });*/
   }
 
   render() {

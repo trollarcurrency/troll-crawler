@@ -202,7 +202,7 @@ class Account extends React.Component {
                 <AccountQR account={account} style={{ width: "80px" }} />
               </div>
               <div className="col">
-                <PriceWithConversions
+			  <PriceWithConversions
                   raw
                   amount={balance}
                   currencies={["base", "usd", "btc"]}
